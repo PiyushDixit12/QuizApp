@@ -564,9 +564,7 @@ function storeDataInArray(index) {
     console.log("user Answere",userAnswere[index]);
     console.log("user Answeres",userAnswere);
 }
-
 // =================== Score Box =================
-
 // shows score
 let scorebox = document.getElementById('score-box');
 let rightscore = document.getElementById("right-score");
@@ -614,7 +612,6 @@ function showScore() {
     unattemptscore.innerHTML = "  " + unAttempt;
 
 }
-
 // ============== Correct Answere ==============
 let VIEWMODE = false;
 let viewbtn = document.getElementById('view-btn');
@@ -629,12 +626,10 @@ viewbtn.addEventListener("click",() => {
     loadQuestion(countQues);
     review.parentElement.style.display = 'none';
 });
-
 let playbtn = document.getElementById('play-btn');
 playbtn.addEventListener("click",() => {
     location.reload();
 });
-
 // ========review mode===============
 let REVIEWMODE = false;
 let reviewIndex = 0;
