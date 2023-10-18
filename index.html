@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quiz App </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- user box -->
+    <div class="user-box" id="user-box">
+        <h1> Welcome To Quiz App </h1>
+        <div class="user-detail">
+            <label for="user-name">Enter Your Name : </label>
+            <input type="text" placeholder="Name" id="user-input">
+        </div>
+        <div class="btn-box">
+
+            <button class="next-btn" id="user-next"> Next </button>
+        </div>
+    </div>
+
+
+    <!-- set box  -->
+    <div class="sets-box" id="sets-box">
+        <h1>Please select any set </h1>
+        <div class="sets-items">
+            <div>
+                <input type="radio" class="set-item" name="set-c" id="set-a"> <label for="set-a"> Set A</label></div>
+            <div> <input type="radio" class="set-item" name="set-c" id="set-b"> <label for="set-b"> Set B</label></div>
+            <div> <input type="radio" class="set-item" name="set-c" id="set-c"> <label for="set-c"> Set C</label></div>
+
+        </div>
+        <div class="btn-box">
+
+            <button class="next-btn" id="sets-btn"> Next  </button>
+        </div>
+
+
+
+    </div>
+
+    <!-- display questions -->
+    <div class="question-box" id="question-box">
+        <div class="question-text">
+            <p id="ques-text"> <b>Question 1 :-</b> <span>here will question</span></p>
+        </div>
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        <div class="question-options">
+
+            <div class="option-item" id="option-1">
+                <input type="radio" name="ans1" id="ans1">
+                <label for="ans1" id="opt1"> option 1</label>
+            </div>
+            <div class="option-item" id="option-2">
+                <input type="radio" name="ans1" id="ans2">
+                <label for="ans2" id="opt2"> option 2</label>
+            </div>
+            <div class="option-item" id="option-3">
+                <input type="radio" name="ans1" id="ans3">
+                <label for="ans3" id="opt3"> option 3</label>
+            </div>
+            <div class="option-item" id="option-4">
+                <input type="radio" name="ans1" id="ans4">
+                <label for="ans4" id="opt4"> option 4</label>
+            </div>
+
+            <div class="preview-box "> <input type="checkbox" name="review" class="prev-item" id="review">
+                <label class="prev-item" for="review"> set as review</label></div>
+
+
+            <div class="btn-box">
+
+                <button class="next-btn" id="previous-btn"> Previous </button>
+                <button class="next-btn" id="ques-btn"> Next </button>
+                <button class="next-btn" id="show-score-btn"> Show score </button>
+            </div>
+            <div class="question-index-btns" id="question-index-btns" style="display: flex; width: 100%; ">
+                <button id="1"> 1</button>
+                <button id="2">2</button>
+                <button id="3">3</button>
+                <button id="4"> 4</button>
+                <button id="5"> 5</button>
+                <button id="6"> 6</button>
+                <button id="7"> 7</button>
+                <button id="8"> 8</button>
+                <button id="9"> 9</button>
+                <button id="10"> 10</button>
+            </div>
+            <div> <button class="next-btn" id="Submit-btn"> Submit </button></div>
+        </div>
+
+    </div>
+
+
+    <div class="score-box" id="score-box">
+        <h1> Total Score </h1>
+        <h2> User Name :- <span id="user-name"> here is user name </span></h2>
+        <h3 style="color: green;">Right answere :- <span id="right-score"> 0 </span> </h3>
+        <h3 style="color: red;">wrong answere :- <span id="wrong-score"> 0 </span> </h3>
+        <h3 style="color: rgb(255, 162, 0);">UnAttempt answere :- <span id="unattempt-score"> 0 </span> </h3>
+
+        <h3> Score in percent :- <span id="perc-score"> 0</span> % </h3>
+        <button class="next-btn" id="view-btn">Result </button>
+        <button class="next-btn" id="play-btn"> Play again </button>
+    </div>
+
+    <div class="score-box" id="review-popup">
+        <iframe src="https://giphy.com/embed/QAPQujznKdHeiX5V3w" width="80" height="80" style="background-color: white; color: white;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <h3>Some Question on review would you like to See</h3>
+        <button id="review-popup-yes" class="next-btn">yes</button>
+        <button id="review-popup-no" class="next-btn">No</button>
+    </div>
+    <!-- <script src="chat.js"></script> -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
